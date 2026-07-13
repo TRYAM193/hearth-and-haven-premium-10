@@ -17,7 +17,7 @@ const allProperties: Property[] = [
   {
     id: 1,
     type: 'Villa',
-    image: 'https://images.unsplash.com/photo-15686051142-2e22c36696b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDZ8MHwxfHNlYXJjaHw3fHxsdXh1cnklMjB2aWxsYXxlbnwwfHx8fDE3MDY2ODk2NTZ8MA&ixlib=rb-4.0.3&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1080&auto=format&fit=crop',
     price: '$2,500,000',
     location: 'Beverly Hills, CA',
     beds: 5,
@@ -28,7 +28,7 @@ const allProperties: Property[] = [
   {
     id: 2,
     type: 'Apartment',
-    image: 'https://source.unsplash.com/random/800x600/?luxury-apartment',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1080&auto=format&fit=crop',
     price: '$1,200,000',
     location: 'New York, NY',
     beds: 3,
@@ -39,7 +39,7 @@ const allProperties: Property[] = [
   {
     id: 3,
     type: 'House',
-    image: 'https://source.unsplash.com/random/800x600/?modern-house',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop',
     price: '$1,800,000',
     location: 'Miami, FL',
     beds: 4,
@@ -50,7 +50,7 @@ const allProperties: Property[] = [
   {
     id: 4,
     type: 'Villa',
-    image: 'https://source.unsplash.com/random/800x600/?luxury-villa-interior',
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1080&auto=format&fit=crop',
     price: '$3,100,000',
     location: 'Malibu, CA',
     beds: 6,

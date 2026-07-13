@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     <section id="home" className="relative h-screen bg-cover bg-center overflow-hidden"
       style={{
-        backgroundImage: `url('https://source.unsplash.com/random/1920x1080/?luxury-real-estate')`, // Dynamic Unsplash image
+        backgroundImage: `url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1920&auto=format&fit=crop')`, // High-quality luxury real estate image
       }}>
       <div className="absolute inset-0 bg-hearth-charcoal opacity-70"></div> {/* Dark overlay */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
