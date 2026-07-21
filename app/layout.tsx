@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "Hearth and Haven",
-  description: "Digital Menu and Table Booking for Hearth and Haven",
+  title: "Hearth & Haven | Luxury Real Estate & Private Estates",
+  description: "Explore exclusive real estate listings, luxury villas, penthouses, and private estates.",
 };
 
 export default function RootLayout({
@@ -15,12 +13,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased bg-background text-foreground flex flex-col min-h-screen">
-        <Header />
-        <main className="flex-grow">
-          {children}
-        </main>
-        <Footer />
+      <body className="antialiased bg-[#0b0f17] text-slate-100 min-h-screen">
+        {children}
       </body>
     </html>
   );

@@ -18,33 +18,44 @@ model Profile {
   @@map("profiles")
 }
 
-model MenuCategory {
-  id        String     @id @default(cuid())
-  name      String     @unique
-  items     MenuItem[]
-  createdAt DateTime   @default(now())
-  updatedAt DateTime   @updatedAt
-}
+model Property {
+  id          String   @id @default(uuid())
+  title       String
+  description String
+  price       Int
+  beds        Int
+  baths       Int
+  area        Int      // in sq ft
+  imageUrl    String
+  location    String
+  type        String   // "Villa", "Apartment", "House"
+  createdAt   DateTime @default(now())
+  bookings    Booking[]
 
-model MenuItem {
-  id           String       @id @default(cuid())
-  name         String
-  description  String
-  price        Float
-  category     MenuCategory @relation(fields: [categoryId], references: [id])
-  categoryId   String
-  createdAt    DateTime     @default(now())
-  updatedAt    DateTime     @updatedAt
+  @@map("properties")
 }
 
 model Booking {
-  id        String   @id @default(cuid())
+  id          String   @id @default(uuid())
+  name        String
+  email       String
+  phone       String
+  propertyId  String
+  property    Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  visitDate   DateTime
+  message     String?
+  status      String   @default("pending") // pending, confirmed, cancelled
+  createdAt   DateTime @default(now())
+
+  @@map("bookings")
+}
+
+model ContactSubmission {
+  id        String   @id @default(uuid())
   name      String
   email     String
-  phone     String
-  date      DateTime
-  time      String
-  guests    Int
+  message   String
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+
+  @@map("contact_submissions")
 }
